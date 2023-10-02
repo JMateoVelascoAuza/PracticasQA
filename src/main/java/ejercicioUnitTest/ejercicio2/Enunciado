@@ -1,0 +1,19 @@
+Se tiene un Banco que va realizando operaciones, tales como préstamos, créditos,
+depósitos, etc
+- cuando una persona desea saber cuanto es su monto máximo a prestar la aplicacion del
+banco realiza una llamada al servicio de la ASFI pidiendo su historial crediticio y saber
+a qué categoría pertenece
+categoria → monto maximo a prestar
+A ---> 200000
+B ---> 100000
+C ---> 0
+Al Desarrollador A le tocó implementar el medodo getMaximoPrestamo(ci) este método usa otro
+internamente: método que realiza la obtención del servicio de la ASFI para obtener la Categoría
+getCategoria(ci)
+deseamos generar las pruebas para :getMaximoPrestamo(ci)
+Ejemplo,
+input output
+CI:454566 maximo a prestar 200000 > si el CI pertenece a la categoria A
+CI:999999 maximo a prestar 100000 >si el CI pertenece a la categoria B
+CI:77777 no se puede prestar ningún monto ALERTA! > si el CI pertenece a la
+categoria C

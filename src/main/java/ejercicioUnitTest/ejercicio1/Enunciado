@@ -1,0 +1,7 @@
+Como usuario necesito crear un metodo que me indique si una palabra es palindrome o
+no.
+Ejemplo
+public boolean isPalindrome(word){ }
+input : jose output false
+input : oro output true
+Crear los unit test
